@@ -1,0 +1,68 @@
+#nav1{
+  color: black;
+  text-decoration: none;
+  
+}
+#nav-right{
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+}
+
+#nav1:hover{
+    color: blueviolet;
+    /* background-color: whitesmoke; */
+    border-radius: 10px;
+    height: 0px;
+}
+#divnav{
+  width: 100%;
+  height: 18vh;
+  
+  
+}
+
+/* body video  */
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.overlay-buttons {
+  position: absolute;
+  top:50%;
+  left:80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.overlay-buttons .btn {
+  margin: 10px;
+  padding: 15px 60px;
+}
+.pngtree {
+    position: fixed;
+    bottom: 10px; /* distance from bottom */
+    left: 10px;   /* distance from left */
+    z-index: 9999; /* make sure it’s on top of other elements */
+}
+
+.pngtree img {
+    width: 320px; /* adjust size */
+    height:320px;
+}
+/* Glass Morphins*/
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+

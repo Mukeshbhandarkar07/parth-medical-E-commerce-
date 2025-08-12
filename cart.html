@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-black">
+  <h2 class="text-center text-white">Your Cart</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price (₹)</th>
+        <th>Quantity</th>
+        <th>Total (₹)</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cartTable"></tbody>
+  </table>
+  <h4 id="grandTotal" class="text-center text-white"></h4>
+  <a href="item.html" class=" btn btn-primary" >Continue Shopping</a>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartTable = document.getElementById("cartTable");
+
+    function renderCart() {
+      cartTable.innerHTML = "";
+      let grandTotal = 0;
+
+      cart.forEach((item, index) => {
+        const total = item.price * item.qty;
+        grandTotal += total;
+
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>${item.price}</td>
+          <td>${item.qty}</td>
+          <td>${total}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" onclick="removeItem(${index})">
+              Delete
+            </button>
+          </td>
+        `;
+        cartTable.appendChild(row);
+      });
+
+      document.getElementById("grandTotal").textContent = `Grand Total: ₹${grandTotal}`;
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    function removeItem(index) {
+      if (confirm("Remove this item from cart?")) {
+        cart.splice(index, 1); // remove item
+        renderCart();
+      }
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>
