@@ -22,7 +22,7 @@ body {
 
 #divnav{
   width: 100%;
-  height: 18vh;
+  height: 25vh;
 }
 #nav1{
   color: white;
@@ -215,3 +215,4 @@ body {
     font-size: 0.9rem;
   }
 }
+
