@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+#searchInput {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+#divnav{
+  width: 100%;
+  height: 25vh;
+}
+#nav1{
+  color: white;
+  text-decoration: none;
+  
+}
+#logoutBtn{
+  text-decoration: none;
+}
+
+.D50{
+  width: 100%;
+  height: 70vh;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  text-decoration: underline;
+  color: rgb(32, 119, 111);
+  background: linear-gradient(to right, red, orange, blue, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.a2 {
+  width: 23%;
+  min-width: 250px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.a2 img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.Medicine-Name {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  background-color: #f5faff;
+  width: 100%;
+  padding: 5px;
+}
+#noResult {
+  font-size: 1.2rem;
+  color: red;
+}
+
+
+.Price {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 20, 20);
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  
+  cursor: pointer;
+  width: 50%;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: darkgreen;
+} jh
+
+footer{
+  
+  max-width: 100%;
+  height: 55vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  
+}
+
+#f2 {
+  width: 23%;
+  min-width: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  
+}
+
+/* login& Register css*/
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Login page responsive adjustments */
+.form-box {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.back-div {
+  background-color: ; 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  .form-box {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .form-box h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Glass Morphins*/
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .a2 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .a2 {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
